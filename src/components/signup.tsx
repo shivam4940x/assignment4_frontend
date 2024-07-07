@@ -19,7 +19,7 @@ export default function Signup() {
   };
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
- 
+
     try {
       const response = await fetch(`${resource.server}/signup`, {
         method: "POST",
@@ -107,7 +107,7 @@ export default function Signup() {
             </svg>
             <span className="sr-only">Info</span>
             <div>
-              <span className="font-medium">Login successful</span>
+              <span className="font-medium">User created successfully</span>
             </div>
           </div>
         </div>
