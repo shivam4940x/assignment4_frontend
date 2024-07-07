@@ -31,3 +31,26 @@ body {
     text-wrap: balance;
   }
 }
+.custom-animation-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform-origin: bottom;
+  transition: all 200ms ease-in-out;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  transform: scaleY(0);
+}
+.custom-animation-button{
+  position: relative;
+  z-index: 0;
+}
+.custom-animation-button:hover::before {
+  transform: scaleY(1);
+}
+.custom-animation-button:hover{
+  color: black;
+}

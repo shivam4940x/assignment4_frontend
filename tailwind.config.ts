@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      width: {
+        "700": "700px",
+      },
+      colors: {
+        lw: "#FFF8F3",
+        customLg: "#2a2a2b8a",
+      },
+      rotate: {
+        "135": "135deg",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
 export default config;
